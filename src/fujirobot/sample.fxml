@@ -10,24 +10,28 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="314.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fujirobot.Controller">
     <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="76.0" layoutX="15.0" layoutY="132.0" stroke="BLACK" strokeType="INSIDE" width="293.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="76.0" layoutX="14.0" layoutY="46.0" stroke="BLACK" strokeType="INSIDE" width="293.0" />
-        <Button layoutX="120.0" layoutY="228.0" mnemonicParsing="false" prefWidth="81.0" text="Calculate" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="76.0" layoutX="15.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="293.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="76.0" layoutX="14.0" layoutY="93.0" stroke="BLACK" strokeType="INSIDE" width="293.0" />
+        <Button layoutX="120.0" layoutY="275.0" mnemonicParsing="false" prefWidth="81.0" text="Calculate" />
         <Label layoutX="20.0" layoutY="14.0" prefHeight="18.0" prefWidth="131.0" text="Prodact hieght in mm" />
-        <TextField layoutX="185.0" layoutY="10.0" prefHeight="25.0" prefWidth="131.0" />
-        <Label layoutX="121.0" layoutY="50.0" prefHeight="18.0" prefWidth="81.0" text="Robot model" />
-      <Label layoutX="130.0" layoutY="139.0" prefHeight="18.0" prefWidth="63.0" text="Line type " />
-      <RadioButton layoutX="44.0" layoutY="155.0" mnemonicParsing="false" selected="true" text="2-2">
+        <TextField layoutX="185.0" layoutY="10.0" prefHeight="25.0" prefWidth="97.0" />
+        <Label layoutX="121.0" layoutY="97.0" prefHeight="18.0" prefWidth="81.0" text="Robot model" />
+      <Label layoutX="130.0" layoutY="186.0" prefHeight="18.0" prefWidth="63.0" text="Line type " />
+      <RadioButton layoutX="44.0" layoutY="202.0" mnemonicParsing="false" selected="true" text="2-2">
          <toggleGroup>
             <ToggleGroup fx:id="lineTyte" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="220.0" layoutY="155.0" mnemonicParsing="false" text="3-1" toggleGroup="$lineTyte" />
-         <RadioButton layoutX="27.0" layoutY="88.0" mnemonicParsing="false" selected="true" text="EC-201">
+      <RadioButton layoutX="220.0" layoutY="202.0" mnemonicParsing="false" text="3-1" toggleGroup="$lineTyte" />
+         <RadioButton layoutX="27.0" layoutY="135.0" mnemonicParsing="false" selected="true" text="EC-201">
          <toggleGroup>
             <ToggleGroup fx:id="robotName" />
          </toggleGroup></RadioButton>
-         <RadioButton layoutX="122.0" layoutY="88.0" mnemonicParsing="false" text="EC-171" toggleGroup="$robotName" />
-         <RadioButton layoutX="220.0" layoutY="88.0" mnemonicParsing="false" text="EC-102" toggleGroup="$robotName" />
+         <RadioButton layoutX="122.0" layoutY="135.0" mnemonicParsing="false" text="EC-171" toggleGroup="$robotName" />
+         <RadioButton layoutX="220.0" layoutY="135.0" mnemonicParsing="false" text="EC-102" toggleGroup="$robotName" />
+      <Label layoutX="21.0" layoutY="43.0" prefHeight="18.0" prefWidth="160.0" text="Conveyer under pallet hieght" />
+      <TextField layoutX="185.0" layoutY="40.0" prefHeight="25.0" prefWidth="97.0" />
+      <Label layoutX="316.0" layoutY="97.0" prefHeight="18.0" prefWidth="63.0" text="Robot base" />
+      <Label layoutX="316.0" layoutY="126.0" prefHeight="18.0" prefWidth="63.0" text="PickUp" />
     </children>
 </AnchorPane>
