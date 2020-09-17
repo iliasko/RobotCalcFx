@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="314.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fujirobot.Controller">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="76.0" layoutX="15.0" layoutY="132.0" stroke="BLACK" strokeType="INSIDE" width="293.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="76.0" layoutX="14.0" layoutY="46.0" stroke="BLACK" strokeType="INSIDE" width="293.0" />
+        <Button layoutX="120.0" layoutY="228.0" mnemonicParsing="false" prefWidth="81.0" text="Calculate" />
+        <Label layoutX="20.0" layoutY="14.0" prefHeight="18.0" prefWidth="131.0" text="Prodact hieght in mm" />
+        <TextField layoutX="185.0" layoutY="10.0" prefHeight="25.0" prefWidth="131.0" />
+        <Label layoutX="121.0" layoutY="50.0" prefHeight="18.0" prefWidth="81.0" text="Robot model" />
+      <Label layoutX="130.0" layoutY="139.0" prefHeight="18.0" prefWidth="63.0" text="Line type " />
+      <RadioButton layoutX="44.0" layoutY="155.0" mnemonicParsing="false" selected="true" text="2-2">
+         <toggleGroup>
+            <ToggleGroup fx:id="lineTyte" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="220.0" layoutY="155.0" mnemonicParsing="false" text="3-1" toggleGroup="$lineTyte" />
+         <RadioButton layoutX="27.0" layoutY="88.0" mnemonicParsing="false" selected="true" text="EC-201">
+         <toggleGroup>
+            <ToggleGroup fx:id="robotName" />
+         </toggleGroup></RadioButton>
+         <RadioButton layoutX="122.0" layoutY="88.0" mnemonicParsing="false" text="EC-171" toggleGroup="$robotName" />
+         <RadioButton layoutX="220.0" layoutY="88.0" mnemonicParsing="false" text="EC-102" toggleGroup="$robotName" />
+    </children>
+</AnchorPane>
